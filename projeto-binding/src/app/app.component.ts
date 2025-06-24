@@ -29,6 +29,7 @@ inputText = "Texto Inicial Alterado";
   logInputText() {
     console.log(this.inputText);
   }
+<<<<<<< HEAD
   handleInputKeyup(event: KeyboardEvent) {
     const currentText = (event.target as HTMLInputElement).value;
     console.log('Key pressed:', currentText);
@@ -37,4 +38,6 @@ inputText = "Texto Inicial Alterado";
     const currentText = (event.target as HTMLInputElement).value;
     console.log('Input changed:', currentText);
   }
+=======
+>>>>>>> 5ae4282 (inserir projeto-binding como pasta comum)
 }
