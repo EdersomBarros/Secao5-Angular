@@ -29,4 +29,12 @@ inputText = "Texto Inicial Alterado";
   logInputText() {
     console.log(this.inputText);
   }
+  handleInputKeyup(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log('Key pressed:', currentText);
+  }
+  handleInputChange(event: Event) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log('Input changed:', currentText);
+  }
 }
