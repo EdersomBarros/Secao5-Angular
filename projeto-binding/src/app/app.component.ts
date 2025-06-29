@@ -6,35 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-inputText = "Texto Inicial Alterado";
-  inputType = "text"
-  isDisabled = false;
+widthButton1 = '110px';
+  widthButton2 = 130;
+  stylesObj = { width: '160px', backgroundColor: 'grey' };
 
-  enableInput() {
-    this.isDisabled = false;
-  }
+  updateStyleObj() {
+    console.log('updateStyleObj');
 
-  disableInput() {
-    this.isDisabled = true;
-  }
-
-  setPasswordTypeInput() {
-    this.inputType = 'password';
+    this.stylesObj.width = '170px';
+    this.stylesObj.backgroundColor = 'lightblue';
   }
 
-  setTextTypeInput() {
-    this.inputType = 'text';
+  updateStyleObjCorrect() {
+    console.log('updateStyleObjCorrect');
+
+    this.stylesObj = { width: '170px', backgroundColor: 'lightblue' };
   }
 
-  logInputText() {
-    console.log(this.inputText);
+  updateWidth() {
+    this.widthButton2 = 200;
   }
-  handleInputKeyup(event: KeyboardEvent) {
-    const currentText = (event.target as HTMLInputElement).value;
-    console.log('Key pressed:', currentText);
-  }
-  handleInputChange(event: Event) {
-    const currentText = (event.target as HTMLInputElement).value;
-    console.log('Input changed:', currentText);
-  }
+
+  isRedButton = false;
+  isGreenButton = true;
 }
