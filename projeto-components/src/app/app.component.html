@@ -1,0 +1,12 @@
+<div class="cards-container">
+ 
+  <app-card [planType]="cardPlanType" 
+       [planPrice]="cardPlanPrice"></app-card>
+
+  <app-card-roxo></app-card-roxo>
+</div>
+ <!-- 
+  O property binding [planType]="cardPlanType" serve para passar o valor da variável 'cardPlanType' 
+  do componente pai (AppComponent) para a propriedade 'planType' do componente filho (CardComponent).
+  Assim, o componente filho pode exibir ou utilizar esse valor dinamicamente.
+-->
